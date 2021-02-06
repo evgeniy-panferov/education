@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>MyFirstServlet</servlet-name>
+        <servlet-class>servlets.MyFirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyFirstServlet</servlet-name>
+        <url-pattern>/first</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MySecondServlet</servlet-name>
+        <servlet-class>servlets.MySecondServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MySecondServlet</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MyThirdServlet</servlet-name>
+        <servlet-class>servlets.MyThirdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyThirdServlet</servlet-name>
+        <url-pattern>/third</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MyFourthServlet</servlet-name>
+        <servlet-class>servlets.MyFourthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyFourthServlet</servlet-name>
+        <url-pattern>/fourth</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MyFifthServlet</servlet-name>
+        <servlet-class>servlets.MyFifthServlet</servlet-class>
+        <init-param>
+            <param-name>message</param-name>
+            <param-value>Hello Servlets</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyFifthServlet</servlet-name>
+        <url-pattern>/fifth</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MySixthServlet</servlet-name>
+        <servlet-class>servlets.MySixthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MySixthServlet</servlet-name>
+        <url-pattern>/sixth</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>MyFifthServletFilter</filter-name>
+        <filter-class>filters.MyFifthServletFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>MyFifthServletFilter</filter-name>
+        <servlet-name>MyFifthServlet</servlet-name>
+    </filter-mapping>
+
+
+</web-app>

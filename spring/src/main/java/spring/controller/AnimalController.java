@@ -1,10 +1,10 @@
 package spring.controller;
 
-import spring.beaninitialization.Animal;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import spring.model.Animal;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;

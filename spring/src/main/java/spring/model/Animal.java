@@ -1,11 +1,17 @@
-package spring.beaninitialization;
+package spring.model;
 
+import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import spring.beaninitialization.InjectName;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 
 /*
@@ -21,10 +27,11 @@ Spring сканирует наш конфигурационный файл(xml, 
 @Component
 @Slf4j
 //@InjectNewClass(newImpl = Dog.class)
-@Getter
+@Data
 public class Animal {
 
     @InjectName(name = "dog astronaut")
+    @Size(min = 3, max = 10, message = "length sentence should be from 3 to 10 characters")
     private String name;
 
     public Animal() {

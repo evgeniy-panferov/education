@@ -1,4 +1,4 @@
-package Solid.singleresponsibility;
+package solid.singleresponsibility;
 
 import java.time.LocalDate;
 

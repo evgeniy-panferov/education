@@ -16,7 +16,7 @@ public class RestAnimalController {
 
     @PostMapping(value = "/jsonAnimal")
     public Animal getJsonAnimal(@Valid @RequestBody Animal clientAnimal, BindingResult bindingResult) {
-        if(bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             return animal;
         }
         return clientAnimal;

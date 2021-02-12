@@ -1,4 +1,4 @@
-package Solid.singleresponsibility.service;
+package solid.singleresponsibility.service;
 
 /*
 Все примеры можно разнести по разным классам, пишу так для упрощения
@@ -9,8 +9,8 @@ Single Responsibility, каждый объект должен иметь одн�
 3) Процесс отправки сообщения пользователю по email.
  */
 
-import Solid.singleresponsibility.MySqlConnection;
-import Solid.singleresponsibility.Policy;
+import solid.singleresponsibility.MySqlConnection;
+import solid.singleresponsibility.Policy;
 
 import java.time.LocalDate;
 

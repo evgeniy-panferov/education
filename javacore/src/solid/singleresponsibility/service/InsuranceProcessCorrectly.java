@@ -1,8 +1,8 @@
-package Solid.singleresponsibility.service;
+package solid.singleresponsibility.service;
 
 
-import Solid.singleresponsibility.MySqlConnection;
-import Solid.singleresponsibility.Policy;
+import solid.singleresponsibility.MySqlConnection;
+import solid.singleresponsibility.Policy;
 
 import java.time.LocalDate;
 
